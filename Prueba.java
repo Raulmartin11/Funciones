@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * 
  */
 import basico.Funciones;
@@ -8,9 +8,10 @@ public class Prueba {
 	public static void main(String[] args) {
 		Scanner S = new Scanner(System.in);
 		int n = S.nextInt();
+		int m = S.nextInt();
 		int x;
 		
-		x = basico.Funciones.volteado(n);
+		x = basico.Funciones.pegaPorDelante(n,m);
 		
 		System.out.print(x);
 		
