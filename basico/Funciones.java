@@ -61,6 +61,24 @@ public class Funciones {
 		 return volteado;
 	 }
 	 /**
+	  * Devuelve el dígito que está en la posición n de un número entero
+	  * @param x un numero entero positivo
+	  * @param z un numero entero positivo
+	  * @return el digito de un numero en la posicion z
+	  */
+	  public static int digitoN(int x, int z){////////////falllo
+			int volte = volteado(x);
+			int dgts = digitos(x);
+			int n = 0;
+			for(int i = 0; i < dgts; i++) {
+				if(i == z){
+					n = x % 10;
+				}
+				x = x / 10;
+			}
+			return n;
+		}
+	 /**
 	  * Devuelve un booleano true si el numero es capicua y false si no lo es
 	  * @param x un numero entero positivo
 	  * @return boolean indicando si es capicua o no
@@ -157,5 +175,15 @@ public class Funciones {
 			 int masDigitoVolteado = pegaPorDetras(voltereta, z);
 			 int masDigito = volteado(masDigitoVolteado);
 			 return masDigito;
+		 }
+		 public static long juntaNumeros(int x, int z) {
+			 int n = digitos(z);
+			 int i = 0;
+			 long xz;
+			 for(i = 0; i < n; i++) {
+				 x = x * 10;
+			 }
+			 xz = x + z;
+			 return xz;
 		 }
 	}

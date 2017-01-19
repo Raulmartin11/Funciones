@@ -10,8 +10,7 @@ public class Prueba {
 		int n = S.nextInt();
 		int m = S.nextInt();
 		int x;
-		
-		x = basico.Funciones.pegaPorDelante(n,m);
+		x = basico.Funciones.digitoN(n,m);
 		
 		System.out.print(x);
 		
